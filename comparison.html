@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Latitude Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+  
+</head>
+<body class="body">
+ 
+    <div class="clearfix"> 
+        
+        <header class="header border-bottom">
+            <div class="container">  
+                <div class="row">
+                    <div class="name col-xs-12 col-sm-12 col-md-12 col-lg-4 text-nowrap text-center py-2 ">   
+                       <!-- <p class="h1 text-center"> Data Dashboard</p> -->
+                        <a class="h1" href="index.html">Lattitude</a>
+                    </div>
+                    
+                    <nav class="col-xs-12 col-sm-12 col-md-12 col-lg-4 offset-lg-4 text-nowrap"> 
+                            <div class="container navbar-expand-lg row">
+                                 <ul class="nav list-unstyled nav-fill py-2 "> 
+                                
+                                    <li class="nav-item dropdown text-left col-lg-3 col-md-12 col-sm-12 col-lg-offset-1 ">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Plots
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item col-lg-4 col-md-12 col-sm-12 text-left col-lg-offset-1  "><a href="comparison.html" class="nav-link text-muted">Comparison</a> </li>
+                                    <li class="nav-item col-lg-4 col-md-12 col-sm-12 text-left col-lg-offset-1 "><a href="data.html" class="nav-link text-muted">Data</a> </li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                </div>
+            </div>
+        </header>
+        
+        <section class="container section pb-5">  
+            <div class="row justify-content-around">
+                <article class="col-xs-12 col-sm-12 col-md-10 article mt-5"> 
+                    <div class ="about"> 
+                        <div class="row"> 
+                            <div class="col-12 border-bottom pt-3">
+                                <h2>Comparison: Latitude vs. ... </h2>
+                            </div>
+                        
+                            <div class="col-12 pt-3">
+                                <p class="font-italic">Click on any plot to get an indepth analysis.</p>
+                                <div class = "row">
+                                    <div class = "col-xs-12 col-sm-12 col-md-6 pb-4">
+                                        <h3 class = "text-center">vs. Wind Speed</h3>
+                                        <a href="windspeed.html">
+                                            <img src="./assets/images/WindSpeedvsLatitude.png" alt="scatter plot of Wind Speed versus Latitude" title="scatter plot of Wind Speed versus Latitude" class="medium-image"/>
+                                        </a>
+                                    </div>
+                                    <div class = "col-xs-12 col-sm-12 col-md-6 pb-4">
+                                        <h3 class = "text-center">vs. Cloudiness</h3>
+                                        <a href="cloudiness.html">
+                                            <img src="./assets/images/CloudinessvsLatitude.png" alt="scatter plot of Cloudiness versus Latitude" title="scatter plot of Cloudiness versus Latitude" class="medium-image"/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class = "row">
+                                    <div class = "col-xs-12 col-sm-12 col-md-6 pb-4">
+                                        <h3 class = "text-center">vs. Humidity</h3>
+                                        <a href="humidty.html">
+                                            <img src="./assets/images/HumidityvsLatitude.png" alt="scatter plot of Humidity versus Latitude" title="scatter plot of Humidity versus Latitude" class="medium-image"/>
+                                        </a>
+                                    </div>
+                                    <div class = "col-xs-12 col-sm-12 col-md-6 pb-4">
+                                        <h3 class = "text-center">vs. Max Temperature</h3>
+                                        <a href="temperature.html">
+                                            <img src="./assets/images/MaxTempvsLatitude.png" alt="scatter plot of Maximum Temperature versus Latitude" title="scatter plot of Maximum Temperature versus Latitude" class="medium-image"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </article>
+
+                
+            </div>
+            <!--<div><p>Image Source <a href="https://www.weather.gov/jetstream/satellite">NASA image from ATS-I, December 11, 1966, the first geostationary satellite. </a></p></div>-->
+        </section>
+
+        <footer class="footer fixed-bottom">
+            <div class="container">
+                <div class="row">
+                    <p class="text-center">Copyright 2019 Karen Gutzman</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</body>
+</html>
+
+
+
